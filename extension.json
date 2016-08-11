@@ -30,8 +30,7 @@
 		"ext.MaterialFAB": {
 			"scripts": [
 				"lib/modernizr.touch.js",
-				"lib/mfb.js",
-				"modules/ext.MaterialFAB.js"                
+				"lib/mfb.js"            
 			],
 			"styles": [
 				"lib/material-icons.css",			
