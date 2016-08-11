@@ -1,54 +1,51 @@
 {
-    "name": "MaterialFAB"
-    , "version": "0.1.0"
-    , "author": [
-		  "[http://kwiki.co.il Kwiki]"
-		, "[[mw:user:HagaiAsaban|Hagai Asaban]]"
-        , "[[mw:user:Yacohen|Yacohen]]"
-	]
-    , "url": "doalogue-kwiki/MaterialFAB"
-    , "descriptionmsg": "MaterialFAB-desc"
-    , "license-name": "GPL v2"
-    , "type": "other"
-    , "AutoloadClasses": {
-        "MaterialFABHooks": "MaterialFAB.hooks.php"
-    }
-    , "ExtensionMessagesFiles": {
-        "MaterialFABAlias": "MaterialFAB.i18n.alias.php"
-    }
-    , "Hooks": {
-        "BeforePageDisplay": [
+	"name": "MaterialFAB",
+	"version": "0.1.0",
+	"author": [
+		"[http://kwiki.co.il Kwiki]",
+		"[[mw:user:HagaiAsaban|Hagai Asaban]]",
+		"[[mw:user:Yacohen|Yacohen]]"
+	],
+	"url": "doalogue-kwiki/MaterialFAB",
+	"descriptionmsg": "MaterialFAB-desc",
+	"license-name": "GPL v2",
+	"type": "other",
+	"AutoloadClasses": {
+		"MaterialFABHooks": "MaterialFAB.hooks.php"
+	},
+	"ExtensionMessagesFiles": {
+		"MaterialFABAlias": "MaterialFAB.i18n.alias.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
 			"MaterialFABHooks::onBeforePageDisplay"
 		]
-    }
-    , "MessagesDirs": {
-        "MaterialFAB": [
+	},
+	"MessagesDirs": {
+		"MaterialFAB": [
 			"i18n"
 		]
-    }
-    , "ResourceModules": {
-        "ext.MaterialFAB": {
-            "scripts": [
-				"modules/ext.MaterialFAB.js"
-			]
-            , "styles": [
-				"modules/ext.MaterialFAB.css"
-			]
-            , "messages": []
-            , "templates": [ 
-                "menu.html" : "templates/menu.html"
-            ]
-            , "dependencies": [
-                 "oojs-ui"
-               , "mediawiki.templates"
-               , "mediawiki.templates.mustache"
-            ]
-        }
-    }
-    , "ResourceFileModulePaths": {
-          "localBasePath": ""
-        , "remoteExtPath": "MaterialFAB"
-    }
-    , "SpecialPages": {}
-    , "manifest_version": 1
+	},
+	"ResourceModules": {
+		"ext.MaterialFAB": {
+			"scripts": [
+				"lib/modernizr.touch.js",
+				"lib/mfb.js",
+				"modules/ext.MaterialFAB.js"                
+			],
+			"styles": [
+				"lib/material-icons.css",			
+				"lib/mfb.css"
+			],
+			"templates": {
+				"menu.mustache" : "templates/menu.mustache"
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "MaterialFAB"
+	},
+	"SpecialPages": {},
+	"manifest_version": 1
 }
