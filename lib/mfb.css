@@ -99,7 +99,7 @@
  * Styles placed here should NOT care about placement in the screen,
  * options chosen by the user or state of the button.
  */
-
+/* @noflip */
 .mfb-component--tl,
 .mfb-component--tr,
 .mfb-component--bl,
@@ -142,22 +142,22 @@
  * 3. Bottom-left:  modified by the " --bl " suffix.
  * 4. Bottom-right: modified by the " --br " suffix.
  */
-
+/* @noflip */
 .mfb-component--tl {
     left: 0;
     top: 0;
 }
-
+/* @noflip */
 .mfb-component--tr {
     right: 0;
     top: 0;
 }
-
+/* @noflip */
 .mfb-component--bl {
     left: 0;
     bottom: 0;
 }
-
+/* @noflip */
 .mfb-component--br {
     right: 0;
     bottom: 0;
@@ -197,7 +197,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* @noflip */
 .mfb-component__list > li {
     display: block;
     position: absolute;
@@ -965,25 +965,25 @@
 /*------------------------------------*\
     #LABELS | Modifiers
 \*------------------------------------*/
-
+/* @noflip */
 .mfb-component--br [data-mfb-label]:after,
 .mfb-component--tr [data-mfb-label]:after {
     content: attr(data-mfb-label);
     right: 70px;
 }
-
+/* @noflip */
 .mfb-component--br .mfb-component__list [data-mfb-label]:after,
 .mfb-component--tr .mfb-component__list [data-mfb-label]:after {
     content: attr(data-mfb-label);
     right: 70px;
 }
-
+/* @noflip */
 .mfb-component--tl [data-mfb-label]:after,
 .mfb-component--bl [data-mfb-label]:after {
     content: attr(data-mfb-label);
     left: 70px;
 }
-
+/* @noflip */
 .mfb-component--tl .mfb-component__list [data-mfb-label]:after,
 .mfb-component--bl .mfb-component__list [data-mfb-label]:after {
     content: attr(data-mfb-label);
@@ -1098,3 +1098,7 @@
         opacity: 1;
     }
 }
+
+/* a:hover, a:focus {
+    color: #ffffff;
+} */

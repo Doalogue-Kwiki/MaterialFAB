@@ -1,0 +1,12 @@
+.mfb-component__button--main,
+.mfb-component__button--child {
+    color: white;
+}
+
+.mfb-component__button--main:hover,
+.mfb-component__button--child:hover,
+.mfb-component__button--main:focus,
+.mfb-component__button--child:focus {
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(0,0,0,0.16),0 8px 12px rgba(0,0,0,0.30);
+}

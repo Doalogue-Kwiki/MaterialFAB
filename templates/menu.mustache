@@ -1,24 +1,27 @@
-<!-- MaterialFAB menu UX -->
-<ul id="{{menu-id}}" class="mfb-component--{{menu-location}} mfb-zoomin" data-mfb-toggle="{{menu-toggle-event}}">
-  <li class="mfb-component__wrap">
-	{{#main-button}}
-		<a href="{{href}}" class="mfb-component__button--main" data-mfb-label="{{label}}">
-		  <i id="{{resting-id}}" class="mfb-component__main-icon--resting {{resting-class-icon}}">
-			{{resting-icon}}
-		  </i>
-		  <i id="{{active-id}}" class="mfb-component__main-icon--active {{active-class-icon}}">
-			{{active-icon}}
-		  </i>
-		</a>
-	{{/main-button}}
-	<ul class="mfb-component__list">
-		{{#menu-items}}
-		<li>
-			<a id="{{id}}" href="{{href}}" data-mfb-label="{{label}}" style="background-color: {{bg-color}}" class="mfb-component__button--child">
-				<i class="mfb-component__child-icon {{class-icon}}">{{icon}}</i>
-			</a>
-		</li>
-		{{/menu-items}}		
-	</ul>
-  </li>
-</ul>
+<div class="Material-FAB-Menu">
+    <ul id="{{menu-id}}" class="material_fab mfb-component--{{menu-location}} mfb-zoomin" 
+        data-mfb-toggle="{{menu-toggle-event}}" >
+        <li class="mfb-component__wrap">
+        {{#main-button}}    
+        <a href="{{href}}" class="mfb-component__button--main" 
+            style="background-color: {{bg-color}}" data-mfb-label="{{label}}">
+              <i id="{{resting-id}}" class="mfb-component__main-icon--resting {{resting-class-icon}}">
+                {{resting-icon}}
+              </i>
+              <i id="{{active-id}}" class="mfb-component__main-icon--active {{active-class-icon}}">
+                {{active-icon}}
+              </i>
+            </a>
+        {{/main-button}}
+        <ul class="mfb-component__list">
+            {{#menu-items}}
+            <li>
+                <a id="{{id}}" href="{{href}}" data-mfb-label="{{label}}" style="background-color: {{bg-color}}" class="mfb-component__button--child">
+                    <i class="mfb-component__child-icon {{class-icon}}">{{icon}}</i>
+                </a>
+            </li>
+            {{/menu-items}}		
+        </ul>
+      </li>
+    </ul>
+</div>

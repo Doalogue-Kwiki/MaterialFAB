@@ -34,7 +34,8 @@
 			],
 			"styles": [
 				"lib/material-icons.css",			
-				"lib/mfb.css"
+				"lib/mfb.css",
+                "modules/ext.MaterialFAB.css"
 			],
 			"templates": {
 				"menu.mustache" : "templates/menu.mustache"
