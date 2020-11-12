@@ -105,9 +105,10 @@
 .mfb-component--bl,
 .mfb-component--br {
     box-sizing: border-box;
-    margin: 25px;
+    margin: 12px;
     position: fixed;
     white-space: nowrap;
+    /*z-index: 100021;*/
     z-index: 30;
     padding-left: 0;
     list-style: none;

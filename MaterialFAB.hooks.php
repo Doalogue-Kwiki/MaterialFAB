@@ -1,6 +1,6 @@
 <?php
 /**
- * Hooks for Accessibility extension
+ * Hooks for MaterialFAB extension
  *
  * @file
  * @ingroup Extensions
